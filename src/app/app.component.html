@@ -1,0 +1,13 @@
+<nav *ngIf="mostrarMenu" >
+    <div class="nav-wrapper">
+        <a routerLink="" class="brand-logo right">Portal Modelo</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li routerLinkActive="active"><a routerLink="/login">Login</a></li>
+        <li routerLinkActive="active"><a routerLink="">Home</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
